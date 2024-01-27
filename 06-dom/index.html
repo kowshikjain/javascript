@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <p class="cart"><strong>Cart Quantity</strong></p>
+        <button onclick="console.log(`cartquantity:${cartQuantity}`);">
+            Show Quantity
+        </button>
+        <button
+            onclick="cartQuantity++;console.log(`cartquantity:${cartQuantity}`);"
+        >
+            Add to Cart
+        </button>
+        <button
+            onclick="cartQuantity+=2;console.log(`cartquantity:${cartQuantity}`);"
+        >
+            +2
+        </button>
+        <button
+            onclick="cartQuantity+=3;console.log(`cartquantity:${cartQuantity}`);"
+        >
+            +3
+        </button>
+        <button
+            onclick="cartQuantity=0;console.log(`Reset Cart:${cartQuantity}`);console.log('Cart is Empty');"
+        >
+            Reset Cart
+        </button>
+        <script src="./script.js"></script>
+    </body>
+</html>
